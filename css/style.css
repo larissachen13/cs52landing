@@ -1,0 +1,10 @@
+header {
+  background: #7accc8;
+}
+
+.header-text{
+  border: 2px solid #fff
+  color: #fff;
+  text-align: center;
+  font-family:'Satisfy';
+}
