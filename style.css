@@ -1,0 +1,280 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.cover{
+  background-image:url("//dl6drjrldv42d.cloudfront.net/assets/home/craft-homepage-photo-80-659a3dc4939c3c58b08ab8e6d44f75f2.jpg");
+  background-size: cover;
+}
+
+.navbar{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.navbar ul {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.menu input {
+  visibility: hidden;
+}
+
+.menu label {
+  visibility: hidden;
+}
+
+.menu ul li {
+    margin-right: 45px;
+}
+
+.menu ul li:hover{
+  opacity: .80;
+  text-decoration: underline;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  position: relative;
+}
+
+.content .header{
+  letter-spacing: 1.75px;
+  font-size: 50px;
+  padding-top: 150px;
+  margin-bottom: 20px;
+}
+
+.content .subheader{
+  margin-bottom: 120px;
+}
+
+.form {
+  padding-top: 35px;
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 10px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 310px;
+}
+
+button:hover {
+  background-color: #000;
+  border: 3px solid #000;
+  opacity: .8;
+}
+
+input[type=email] {
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: .85em;
+  width: 280px;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-left: 150px;
+  padding-bottom: 50px;
+}
+
+.link-section {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.contact-section ul li {
+  display: inline;
+}
+
+footer{
+  background-color: #000;
+  padding-top: 30px;
+  text-align: center:
+}
+
+.contact-section {
+  text-align: right;
+  padding: .33px 45px .33px 0;
+  background: #fbf6f0;
+  color: #333;
+}
+
+.contact-section ul li {
+  margin-right: 10px;
+}
+
+.link-section ul li {
+  margin-bottom: 5px;
+}
+
+/************Typography */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.logo {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding-top: 8px;
+    padding-left: 20px;
+    font-size: 1.33em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.navbar .menu ul li a {
+    font-size: 1.007em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.content .header {
+    font-family: 'Amatic SC', cursive;
+}
+
+.content .subheader{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+button {
+    font-weight: 600;
+    font-size: .9em;
+    color: #fff;
+    letter-spacing: .04em;
+}
+.link-section ul li {
+  color: #fff;
+  font-size: .9em;
+}
+
+.link-section ul li a {
+  font-family: 'Roboto';
+  font-size: .8em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.link-section ul li a:hover {
+  font-family: 'Roboto';
+  font-size: .8em;
+  text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.gradient{
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.85) 94%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px;
+  bottom: 0;
+}
+
+footer {
+  font-family: 'Lato', sans-serif;
+}
+
+/**********Mobile */
+@media only screen and (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 1.5em; 
+  }
+
+  .navbar .menu ul {
+    opacity: 0;
+  }
+
+
+  .menu input {
+    visibility: visible;
+    position: absolute;
+    top: 25px;
+    right: 24px;
+    opacity: 0.0;
+    width: 32px;
+    height: 32px;
+    zoom: 1.01;
+    z-index: 1;
+}
+
+  .menu label {
+    visibility: visible;
+    position: absolute;
+    top: 25px;
+    right: 28px;
+  }
+
+  .menu label: hover {
+    opacity: .8;
+  }
+
+  input[type=checkbox]:checked ~ ul {
+      display: block;
+      position: absolute;
+      top: 50px;
+      right: -40px;
+      text-align: right;
+      background: #000;
+      opacity: .84;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 100%;
+      height: 600px;
+      transition: opacity .4s ease-in;
+      z-index: 1;
+  }
+
+  input[type=checkbox]:checked ~ ul > li {
+      margin-bottom: 3px;
+      padding-bottom: 30px;
+      font-size: 1.1em;
+  }
+
+  input[type=checkbox]:checked ~ ul > li:hover{
+      margin-bottom: 3px;
+      padding-bottom: 30px;
+      font-size: 1.2em;
+  }
+
+}
