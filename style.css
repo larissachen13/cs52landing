@@ -70,8 +70,12 @@ ul {
 }
 
 .form {
-  padding-top: 35px;
-  margin-top: 50px;
+    padding: 28px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.35);
+    display: inline-block;
+    border-radius: 18px;
 }
 
 button {
@@ -218,7 +222,7 @@ footer {
   }
 
   .logo {
-    font-size: 1.5em; 
+    font-size: 1.5em;
   }
 
   .navbar .menu ul {
@@ -276,5 +280,13 @@ footer {
       padding-bottom: 30px;
       font-size: 1.2em;
   }
+
+  .contact-section ul li {
+      display: block;
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+  }
+
 
 }
